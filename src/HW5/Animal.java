@@ -15,6 +15,8 @@ public abstract class Animal {
         this.swimLimit = swimLimit;
 
         Animal.animalCount++;
+        Animal.dogCount++;
+        Animal.catCount++;
     }
 
     public void run (int distance) {
@@ -26,16 +28,11 @@ public abstract class Animal {
     }
     public void swim (int distance) {
         if (swimLimit == 0) {
-            System.out.println(name + " проплив" + distance + "м");
+            System.out.println(name + " проплив " + distance + "м");
         } else  {
             System.out.println(name + " не зміг проплисти " + distance + "м (ліміт: " + swimLimit + "м");
         }
-    }
-    protected static void incremnentDog() {
-        dogCount++;
-    }
-    protected static void incremnentCat() {
-        catCount++;
+
     }
 
     public static int getAnimalCount() {
