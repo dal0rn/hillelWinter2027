@@ -1,4 +1,4 @@
-package Task5;
+package HW4.Task5;
 
 public class Main{
     static void main() {

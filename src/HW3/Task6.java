@@ -1,3 +1,5 @@
+package HW3;
+
 public class Task6 {
     public static void main(String[] args) {
         System.out.println(isSuminRange(5, 10));
