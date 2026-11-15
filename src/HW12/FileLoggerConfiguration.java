@@ -1,0 +1,20 @@
+package HW12;
+
+public class FileLoggerConfiguration implements LoggerConfiguration {
+    private final String file;
+    private final LoggingLevel level;
+    private final long maxSize;   // в байтах
+    private final String format;
+
+    public FileLoggerConfiguration(String file, LoggingLevel level, long maxSize, String format) {
+        this.file = file;
+        this.level = level;
+        this.maxSize = maxSize;
+        this.format = format;
+    }
+
+    public String getFile()        { return file; }
+    @Override public LoggingLevel getLevel() { return level; }
+    public long getMaxSize()       { return maxSize; }
+    @Override public String getFormat()      { return format; }
+}
