@@ -1,9 +1,8 @@
 package HW12;
 
 public enum LoggingLevel {
-    INFO, DEBUG; // порядок важен: чем выше ordinal, тем «подробнее»
+    INFO, DEBUG;
 
-    /** Будет ли сообщение этого уровня записано при настроенном уровне configured */
     public boolean isVisibleAt(LoggingLevel configured) {
         return this.ordinal() <= configured.ordinal();
     }

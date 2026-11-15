@@ -3,7 +3,7 @@ package HW12;
 public class FileLoggerConfiguration implements LoggerConfiguration {
     private final String file;
     private final LoggingLevel level;
-    private final long maxSize;   // в байтах
+    private final long maxSize;
     private final String format;
 
     public FileLoggerConfiguration(String file, LoggingLevel level, long maxSize, String format) {

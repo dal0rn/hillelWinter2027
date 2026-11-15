@@ -41,7 +41,7 @@ public class FileLogger implements Logger {
             }
             long size = Files.exists(currentFile) ? Files.size(currentFile) : 0;
 
-            if (size >= config.getMaxSize()) {            // «достигнут или превышен»
+            if (size >= config.getMaxSize()) {
                 if (!rotate) {
                     throw new FileMaxSizeReachedException(
                             config.getMaxSize(), size, currentFile.toAbsolutePath().toString());
